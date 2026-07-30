@@ -6,7 +6,7 @@
   <title>Kyle & Sharon | Wedding</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
   <style>
     :root {
       --gold: #c9a227;
@@ -17,24 +17,21 @@
       --soft-dark: #2a2a2a;
       --text: #f5f0e6;
     }
-
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
-
     html {
       scroll-behavior: smooth;
     }
-
     body {
-      font-family: 'Lora', Georgia, serif;
+      font-family: 'Cormorant Garamond', Georgia, serif;
       background-color: var(--darker);
       color: var(--text);
       line-height: 1.7;
+      font-size: 1.15rem;
     }
-
     /* Navigation */
     nav {
       position: fixed;
@@ -46,7 +43,6 @@
       border-bottom: 1px solid rgba(201, 162, 39, 0.3);
       padding: 0.9rem 0;
     }
-
     nav .nav-inner {
       max-width: 1100px;
       margin: 0 auto;
@@ -56,20 +52,19 @@
       flex-wrap: wrap;
       padding: 0 1rem;
     }
-
     nav a {
       color: var(--cream);
       text-decoration: none;
-      font-size: 0.95rem;
+      font-size: 1.05rem;
       letter-spacing: 0.08em;
       text-transform: uppercase;
       transition: color 0.3s ease;
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 500;
     }
-
     nav a:hover {
       color: var(--gold);
     }
-
     /* Hero */
     .hero {
       min-height: 100vh;
@@ -79,13 +74,12 @@
       align-items: center;
       text-align: center;
       padding: 6rem 1.5rem 4rem;
-      background: 
+      background:
         linear-gradient(rgba(10, 10, 10, 0.55), rgba(10, 10, 10, 0.65)),
         url('hero-bg.png') center center / cover no-repeat;
       position: relative;
       overflow: hidden;
     }
-
     .hero::before {
       content: "";
       position: absolute;
@@ -96,7 +90,6 @@
       background: radial-gradient(ellipse at center bottom, rgba(201, 162, 39, 0.12) 0%, transparent 70%);
       pointer-events: none;
     }
-
     .hero-ornament {
       font-size: 1.8rem;
       color: var(--gold);
@@ -106,96 +99,85 @@
       position: relative;
       z-index: 1;
     }
-
     .hero h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: clamp(2.8rem, 8vw, 4.8rem);
+      font-family: 'Great Vibes', cursive;
+      font-size: clamp(3.2rem, 10vw, 5.5rem);
       font-weight: 400;
       color: var(--cream);
       margin-bottom: 0.6rem;
-      letter-spacing: 0.04em;
+      letter-spacing: 0.02em;
       text-shadow: 0 2px 12px rgba(0,0,0,0.7);
       position: relative;
       z-index: 1;
     }
-
     .hero h1 span {
       color: var(--gold);
-      font-style: italic;
     }
-
     .hero .date {
-      font-family: 'Playfair Display', serif;
-      font-size: clamp(1.2rem, 3.5vw, 1.7rem);
+      font-family: 'Great Vibes', cursive;
+      font-size: clamp(1.6rem, 4.5vw, 2.3rem);
       color: var(--gold-light);
       margin-top: 1.2rem;
-      letter-spacing: 0.12em;
+      letter-spacing: 0.04em;
       text-shadow: 0 2px 8px rgba(0,0,0,0.6);
       position: relative;
       z-index: 1;
     }
-
     .hero .invite-line {
-      font-style: italic;
-      font-size: 1.15rem;
-      color: rgba(245, 240, 230, 0.92);
+      font-family: 'Great Vibes', cursive;
+      font-size: clamp(1.3rem, 3.5vw, 1.7rem);
+      color: rgba(245, 240, 230, 0.95);
       margin-top: 1.8rem;
-      max-width: 480px;
+      max-width: 520px;
       text-shadow: 0 2px 8px rgba(0,0,0,0.6);
       position: relative;
       z-index: 1;
     }
-
     .hero .divider {
       position: relative;
       z-index: 1;
     }
-
     .divider {
       width: 120px;
       height: 1px;
       background: linear-gradient(90deg, transparent, var(--gold), transparent);
       margin: 2rem auto;
     }
-
     /* Sections */
     section {
       padding: 5rem 1.5rem;
       max-width: 900px;
       margin: 0 auto;
+      position: relative;
     }
-
     section h2 {
-      font-family: 'Playfair Display', serif;
-      font-size: clamp(1.9rem, 5vw, 2.6rem);
+      font-family: 'Great Vibes', cursive;
+      font-size: clamp(2.4rem, 6vw, 3.4rem);
       text-align: center;
       color: var(--gold);
       margin-bottom: 0.5rem;
       font-weight: 400;
-      letter-spacing: 0.06em;
+      letter-spacing: 0.03em;
     }
-
     .section-subtitle {
       text-align: center;
       font-style: italic;
       color: rgba(245, 240, 230, 0.7);
       margin-bottom: 2.5rem;
-      font-size: 1.05rem;
+      font-size: 1.15rem;
+      font-family: 'Cormorant Garamond', serif;
     }
-
     /* Details Cards */
     .details-grid {
       display: grid;
       grid-template-columns: 1fr;
       gap: 1.8rem;
     }
-
     @media (min-width: 640px) {
       .details-grid {
         grid-template-columns: 1fr 1fr;
       }
     }
-
     .detail-card {
       background: var(--soft-dark);
       border: 1px solid rgba(201, 162, 39, 0.25);
@@ -204,31 +186,27 @@
       text-align: center;
       transition: border-color 0.3s ease;
     }
-
     .detail-card:hover {
       border-color: var(--gold);
     }
-
     .detail-card h3 {
-      font-family: 'Playfair Display', serif;
-      font-size: 1.35rem;
+      font-family: 'Great Vibes', cursive;
+      font-size: 2rem;
       color: var(--gold-light);
       margin-bottom: 0.6rem;
-      font-weight: 500;
+      font-weight: 400;
     }
-
     .detail-card p {
-      font-size: 1.05rem;
+      font-size: 1.15rem;
       color: var(--cream);
     }
-
     .detail-card .time {
-      font-size: 1.4rem;
+      font-size: 1.5rem;
       color: var(--gold);
       font-weight: 500;
       margin-top: 0.3rem;
+      font-family: 'Cormorant Garamond', serif;
     }
-
     /* Venue */
     .venue-box {
       background: var(--soft-dark);
@@ -237,20 +215,17 @@
       padding: 2.2rem 1.8rem;
       text-align: center;
     }
-
     .venue-box h3 {
-      font-family: 'Playfair Display', serif;
-      font-size: 1.6rem;
+      font-family: 'Great Vibes', cursive;
+      font-size: 2.2rem;
       color: var(--gold);
       margin-bottom: 0.5rem;
     }
-
     .venue-box .location {
-      font-size: 1.15rem;
+      font-size: 1.25rem;
       margin-bottom: 1.2rem;
       color: var(--cream);
     }
-
     .venue-box a {
       display: inline-block;
       margin-top: 0.8rem;
@@ -259,37 +234,50 @@
       border-bottom: 1px solid var(--gold);
       padding-bottom: 2px;
       transition: color 0.3s ease;
+      font-size: 1.1rem;
     }
-
     .venue-box a:hover {
       color: var(--gold-light);
     }
-
     /* Hotels */
     .hotels-list {
       display: grid;
       gap: 1.4rem;
     }
-
     .hotel-item {
       background: var(--soft-dark);
       border-left: 3px solid var(--gold);
-      padding: 1.3rem 1.5rem;
+      padding: 1.4rem 1.6rem;
       border-radius: 0 6px 6px 0;
     }
-
     .hotel-item h3 {
-      font-family: 'Playfair Display', serif;
-      font-size: 1.25rem;
+      font-family: 'Great Vibes', cursive;
+      font-size: 1.85rem;
       color: var(--gold-light);
-      margin-bottom: 0.3rem;
+      margin-bottom: 0.25rem;
     }
-
     .hotel-item p {
-      font-size: 1rem;
+      font-size: 1.1rem;
       color: rgba(245, 240, 230, 0.9);
+      margin-bottom: 0.6rem;
     }
-
+    .hotel-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 0.4rem;
+    }
+    .hotel-links a {
+      color: var(--gold);
+      text-decoration: none;
+      font-size: 1rem;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.25s ease, color 0.25s ease;
+    }
+    .hotel-links a:hover {
+      color: var(--gold-light);
+      border-bottom-color: var(--gold-light);
+    }
     /* RSVP */
     .rsvp-box {
       background: linear-gradient(145deg, #2a2a2a, #1f1a12);
@@ -298,42 +286,35 @@
       padding: 2.5rem 2rem;
       text-align: center;
     }
-
     .rsvp-box p {
-      font-size: 1.15rem;
+      font-size: 1.2rem;
       margin-bottom: 1rem;
     }
-
     .rsvp-box .deadline {
-      font-family: 'Playfair Display', serif;
-      font-size: 1.35rem;
+      font-family: 'Great Vibes', cursive;
+      font-size: 2rem;
       color: var(--gold);
       margin: 1.2rem 0;
     }
-
     .rsvp-box .phone {
       font-size: 1.4rem;
       color: var(--cream);
-      letter-spacing: 0.05em;
+      letter-spacing: 0.03em;
       margin-top: 0.8rem;
     }
-
     .rsvp-box .phone a {
       color: var(--gold);
       text-decoration: none;
     }
-
     .rsvp-box .phone a:hover {
       text-decoration: underline;
     }
-
     .bar-note {
       margin-top: 1.5rem;
-      font-size: 1rem;
+      font-size: 1.05rem;
       color: rgba(245, 240, 230, 0.8);
       font-style: italic;
     }
-
     /* Photos */
     .photos-box {
       background: var(--soft-dark);
@@ -342,22 +323,20 @@
       padding: 2.5rem 2rem;
       text-align: center;
     }
-
     .photos-box p {
       max-width: 480px;
       margin: 0 auto 1.8rem;
-      font-size: 1.15rem;
+      font-size: 1.2rem;
       line-height: 1.8;
     }
-
     .btn {
       display: inline-block;
       background: transparent;
       color: var(--gold);
       border: 1.5px solid var(--gold);
       padding: 0.85rem 2rem;
-      font-family: 'Lora', serif;
-      font-size: 1rem;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.1rem;
       letter-spacing: 0.08em;
       text-transform: uppercase;
       text-decoration: none;
@@ -365,54 +344,83 @@
       transition: all 0.3s ease;
       cursor: pointer;
     }
-
     .btn:hover {
       background: var(--gold);
       color: var(--darker);
     }
-
     .photos-note {
       margin-top: 1.8rem;
-      font-size: 0.95rem;
+      font-size: 1rem;
       color: rgba(245, 240, 230, 0.65);
       max-width: 480px;
       margin-left: auto;
       margin-right: auto;
     }
-
     /* Footer */
     footer {
       text-align: center;
       padding: 3rem 1.5rem 2.5rem;
       border-top: 1px solid rgba(201, 162, 39, 0.2);
       margin-top: 2rem;
+      position: relative;
     }
-
     footer p {
-      font-family: 'Playfair Display', serif;
-      font-size: 1.3rem;
+      font-family: 'Great Vibes', cursive;
+      font-size: 2rem;
       color: var(--gold);
       margin-bottom: 0.5rem;
     }
-
     footer .small {
-      font-size: 0.9rem;
+      font-size: 1.05rem;
       color: rgba(245, 240, 230, 0.55);
+      font-family: 'Cormorant Garamond', serif;
     }
-
-    /* Decorative line */
+    /* Decorative ornaments matching invitation */
     .ornament {
       text-align: center;
       color: var(--gold);
-      font-size: 1.4rem;
-      letter-spacing: 0.5em;
-      margin: 0.5rem 0 1.5rem;
-      opacity: 0.8;
+      font-size: 1.6rem;
+      letter-spacing: 0.4em;
+      margin: 0.4rem 0 1.6rem;
+      opacity: 0.9;
+    }
+    .floral-center {
+      text-align: center;
+      color: var(--gold);
+      font-size: 1.8rem;
+      margin: 0.3rem 0 1.4rem;
+      opacity: 0.85;
+      letter-spacing: 0.15em;
+    }
+    /* Corner-style decorative flourishes */
+    .section-decor {
+      position: relative;
+    }
+    .section-decor::before,
+    .section-decor::after {
+      content: "❧";
+      position: absolute;
+      top: 1.2rem;
+      color: var(--gold);
+      font-size: 1.3rem;
+      opacity: 0.5;
+    }
+    .section-decor::before {
+      left: 0.5rem;
+    }
+    .section-decor::after {
+      right: 0.5rem;
+      transform: scaleX(-1);
+    }
+    @media (max-width: 600px) {
+      .section-decor::before,
+      .section-decor::after {
+        display: none;
+      }
     }
   </style>
 </head>
 <body>
-
   <!-- Navigation -->
   <nav>
     <div class="nav-inner">
@@ -434,9 +442,9 @@
   </header>
 
   <!-- Schedule / Details -->
-  <section id="details">
+  <section id="details" class="section-decor">
     <h2>Wedding Details</h2>
-    <div class="ornament">❧</div>
+    <div class="floral-center">❀  ❧  ❀</div>
     <div class="details-grid">
       <div class="detail-card">
         <h3>Ceremony</h3>
@@ -452,9 +460,9 @@
   </section>
 
   <!-- Venue -->
-  <section id="venue">
+  <section id="venue" class="section-decor">
     <h2>Venue</h2>
-    <div class="ornament">❧</div>
+    <div class="floral-center">❀  ❧  ❀</div>
     <div class="venue-box">
       <h3>Saskcan Community Centre</h3>
       <p class="location">Wilkie, Saskatchewan</p>
@@ -464,29 +472,41 @@
   </section>
 
   <!-- Hotels -->
-  <section id="hotels">
+  <section id="hotels" class="section-decor">
     <h2>Nearby Hotels</h2>
     <p class="section-subtitle">Recommended accommodations for guests</p>
     <div class="hotels-list">
       <div class="hotel-item">
-        <h3>Prairie Moon</h3>
+        <h3>Prairie Moon Inn & Suites</h3>
         <p>Unity, Saskatchewan</p>
+        <div class="hotel-links">
+          <a href="https://www.google.com/maps/search/?api=1&query=Prairie+Moon+Inn+%26+Suites+103+2nd+Ave+S+Unity+SK" target="_blank" rel="noopener">Google Maps</a>
+          <a href="https://www.prairiemooninn.com/unity" target="_blank" rel="noopener">Website</a>
+        </div>
       </div>
       <div class="hotel-item">
-        <h3>Travelodge</h3>
+        <h3>Travelodge by Wyndham</h3>
         <p>North Battleford, Saskatchewan</p>
+        <div class="hotel-links">
+          <a href="https://www.google.com/maps/search/?api=1&query=Travelodge+by+Wyndham+992+101st+Street+North+Battleford+SK" target="_blank" rel="noopener">Google Maps</a>
+          <a href="https://www.wyndhamhotels.com/travelodge/north-battleford-saskatchewan/travelodge-north-battleford/overview" target="_blank" rel="noopener">Website</a>
+        </div>
       </div>
       <div class="hotel-item">
-        <h3>Comfort Inn</h3>
+        <h3>Comfort Inn & Suites</h3>
         <p>North Battleford, Saskatchewan</p>
+        <div class="hotel-links">
+          <a href="https://www.google.com/maps/search/?api=1&query=Comfort+Inn+%26+Suites+610+Carlton+Trail+North+Battleford+SK" target="_blank" rel="noopener">Google Maps</a>
+          <a href="https://www.choicehotels.com/saskatchewan/north-battleford/comfort-inn-hotels/cna76" target="_blank" rel="noopener">Website</a>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- RSVP -->
-  <section id="rsvp">
+  <section id="rsvp" class="section-decor">
     <h2>RSVP</h2>
-    <div class="ornament">❧</div>
+    <div class="floral-center">❀  ❧  ❀</div>
     <div class="rsvp-box">
       <p>Kindly reply by</p>
       <p class="deadline">September 5<sup>th</sup>, 2026</p>
@@ -500,14 +520,12 @@
   </section>
 
   <!-- Photos -->
-  <section id="photos">
+  <section id="photos" class="section-decor">
     <h2>Share Your Photos</h2>
-    <div class="ornament">❧</div>
+    <div class="floral-center">❀  ❧  ❀</div>
     <div class="photos-box">
       <p>We would love to see the moments you capture.<br>
       Tap the button below to add your photos to our shared album.</p>
-      
-      <!-- Replace the href below with your actual Google Photos shared album link -->
       <a class="btn" href="https://photos.app.goo.gl/WMWkb9ZkBFDPqkiz6/" target="_blank" rel="noopener">
         Add Your Photos
       </a>
@@ -516,9 +534,9 @@
 
   <!-- Footer -->
   <footer>
+    <div class="floral-center">❀  ❧  ❀</div>
     <p>Kyle & Sharon</p>
     <p class="small">October 17, 2026 · Wilkie, Saskatchewan</p>
   </footer>
-
 </body>
 </html>
