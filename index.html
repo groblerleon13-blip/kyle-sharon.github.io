@@ -6,7 +6,7 @@
   <title>Kyle & Sharon | Wedding</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
   <style>
     :root {
       --gold: #c9a227;
@@ -85,6 +85,8 @@
         url('hero-bg.png') center 78% / cover no-repeat;
       background-size: cover;
       background-position: center 78%;
+      image-rendering: -webkit-optimize-contrast;
+      image-rendering: high-quality;
       z-index: 0;
     }
     .hero-bg::after {
@@ -106,36 +108,33 @@
       text-shadow: 0 2px 8px rgba(0,0,0,0.7);
     }
     .hero h1 {
-      font-family: Algerian, 'Times New Roman', serif;
-      font-size: clamp(2.8rem, 9vw, 4.8rem);
+      font-family: 'Monsieur La Doulaise', cursive;
+      font-size: clamp(3.4rem, 11vw, 5.8rem);
       font-weight: 400;
       color: var(--cream);
       margin-bottom: 0.6rem;
-      letter-spacing: 0.06em;
+      letter-spacing: 0.02em;
       text-shadow: 0 2px 14px rgba(0,0,0,0.75);
-      text-transform: uppercase;
     }
     .hero h1 span {
       color: var(--gold);
     }
-    .hero .date {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: clamp(1.4rem, 3.8vw, 1.9rem);
-      font-weight: 500;
-      color: var(--gold-light);
-      margin-top: 1.2rem;
-      letter-spacing: 0.08em;
-      text-shadow: 0 2px 10px rgba(0,0,0,0.7);
-    }
+.hero .date {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(1.4rem, 3.8vw, 1.9rem);
+  font-weight: 500;
+  color: var(--gold-light);
+  margin-top: 1.2rem;
+  letter-spacing: 0.08em;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.7);
+}
     .hero .invite-line {
-      font-family: Algerian, 'Times New Roman', serif;
-      font-size: clamp(1.1rem, 3vw, 1.5rem);
+      font-family: 'Monsieur La Doulaise', cursive;
+      font-size: clamp(1.4rem, 3.8vw, 1.9rem);
       color: rgba(245, 240, 230, 0.95);
       margin-top: 1.8rem;
       max-width: 560px;
-      letter-spacing: 0.05em;
       text-shadow: 0 2px 10px rgba(0,0,0,0.7);
-      text-transform: uppercase;
     }
     .hero .divider {
       width: 120px;
@@ -151,14 +150,13 @@
       position: relative;
     }
     section h2 {
-      font-family: Algerian, 'Times New Roman', serif;
-      font-size: clamp(2.1rem, 5.5vw, 3rem);
+      font-family: 'Monsieur La Doulaise', cursive;
+      font-size: clamp(2.6rem, 6.5vw, 3.6rem);
       text-align: center;
       color: var(--gold);
       margin-bottom: 0.5rem;
       font-weight: 400;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
+      letter-spacing: 0.03em;
     }
     .section-subtitle {
       text-align: center;
@@ -191,13 +189,11 @@
       border-color: var(--gold);
     }
     .detail-card h3 {
-      font-family: Algerian, 'Times New Roman', serif;
-      font-size: 1.7rem;
+      font-family: 'Monsieur La Doulaise', cursive;
+      font-size: 2.1rem;
       color: var(--gold-light);
       margin-bottom: 0.6rem;
       font-weight: 400;
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
     }
     .detail-card p {
       font-size: 1.15rem;
@@ -219,12 +215,10 @@
       text-align: center;
     }
     .venue-box h3 {
-      font-family: Algerian, 'Times New Roman', serif;
-      font-size: 1.9rem;
+      font-family: 'Monsieur La Doulaise', cursive;
+      font-size: 2.3rem;
       color: var(--gold);
       margin-bottom: 0.5rem;
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
     }
     .venue-box .location {
       font-size: 1.25rem;
@@ -256,12 +250,10 @@
       border-radius: 0 6px 6px 0;
     }
     .hotel-item h3 {
-      font-family: Algerian, 'Times New Roman', serif;
-      font-size: 1.6rem;
+      font-family: 'Monsieur La Doulaise', cursive;
+      font-size: 1.95rem;
       color: var(--gold-light);
       margin-bottom: 0.25rem;
-      letter-spacing: 0.03em;
-      text-transform: uppercase;
     }
     .hotel-item p {
       font-size: 1.1rem;
@@ -298,12 +290,10 @@
       margin-bottom: 1rem;
     }
     .rsvp-box .deadline {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 1.6rem;
-      font-weight: 500;
+      font-family: 'Monsieur La Doulaise', cursive;
+      font-size: 2.1rem;
       color: var(--gold);
       margin: 1.2rem 0;
-      letter-spacing: 0.05em;
     }
     .rsvp-box .phone {
       font-size: 1.4rem;
@@ -366,12 +356,10 @@
       position: relative;
     }
     footer p {
-      font-family: Algerian, 'Times New Roman', serif;
-      font-size: 1.8rem;
+      font-family: 'Monsieur La Doulaise', cursive;
+      font-size: 2.1rem;
       color: var(--gold);
       margin-bottom: 0.5rem;
-      letter-spacing: 0.05em;
-      text-transform: uppercase;
     }
     footer .small {
       font-size: 1.05rem;
