@@ -85,8 +85,6 @@
         url('hero-bg.png') center 78% / cover no-repeat;
       background-size: cover;
       background-position: center 78%;
-      image-rendering: -webkit-optimize-contrast;
-      image-rendering: high-quality;
       z-index: 0;
     }
     .hero-bg::after {
@@ -119,15 +117,15 @@
     .hero h1 span {
       color: var(--gold);
     }
-.hero .date {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: clamp(1.4rem, 3.8vw, 1.9rem);
-  font-weight: 500;
-  color: var(--gold-light);
-  margin-top: 1.2rem;
-  letter-spacing: 0.08em;
-  text-shadow: 0 2px 10px rgba(0,0,0,0.7);
-}
+    .hero .date {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(1.4rem, 3.8vw, 1.9rem);
+      font-weight: 500;
+      color: var(--gold-light);
+      margin-top: 1.2rem;
+      letter-spacing: 0.08em;
+      text-shadow: 0 2px 10px rgba(0,0,0,0.7);
+    }
     .hero .invite-line {
       font-family: 'Monsieur La Doulaise', cursive;
       font-size: clamp(1.4rem, 3.8vw, 1.9rem);
@@ -290,10 +288,12 @@
       margin-bottom: 1rem;
     }
     .rsvp-box .deadline {
-      font-family: 'Monsieur La Doulaise', cursive;
-      font-size: 2.1rem;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.6rem;
+      font-weight: 500;
       color: var(--gold);
       margin: 1.2rem 0;
+      letter-spacing: 0.05em;
     }
     .rsvp-box .phone {
       font-size: 1.4rem;
@@ -469,13 +469,13 @@
           <a href="https://www.prairiemooninn.com/unity" target="_blank" rel="noopener">Website</a>
         </div>
       </div>
-    <div class="hotel-item">
-  <h3>Armada Inn Motel</h3>
-  <p>Unity, Saskatchewan</p>
-  <div class="hotel-links">
-    <a href="https://www.google.com/maps/search/?api=1&query=Armada+Inn+Motel+Unity+SK" target="_blank" rel="noopener">Google Maps</a>
-  </div>
-</div>
+      <div class="hotel-item">
+        <h3>Armada Inn Motel</h3>
+        <p>Unity, Saskatchewan</p>
+        <div class="hotel-links">
+          <a href="https://www.google.com/maps/search/?api=1&query=Armada+Inn+Motel+Unity+SK" target="_blank" rel="noopener">Google Maps</a>
+        </div>
+      </div>
       <div class="hotel-item">
         <h3>Gold Eagle Lodge</h3>
         <p>North Battleford, Saskatchewan</p>
@@ -510,10 +510,15 @@
     <div class="rsvp-box">
       <p>Kindly reply by</p>
       <p class="deadline">September 5<sup>th</sup>, 2026</p>
-      <p>Please contact</p>
-      <p class="phone">
-        <strong>Sharon Walker</strong><br>
-        <a href="tel:13066415088">1-306-641-5088</a>
+      <p style="margin-bottom: 1.8rem;">Please let us know if you’ll be joining us</p>
+      
+      <a class="btn" href="https://forms.gle/8AgDBoHYokt7g8eW7" target="_blank" rel="noopener">
+        RSVP Here
+      </a>
+
+      <p class="bar-note" style="margin-top: 2rem;">
+        Prefer to call? Contact Sharon Walker<br>
+        <a href="tel:13066415088" style="color: var(--gold);">1-306-641-5088</a>
       </p>
       <p class="bar-note">Bar: $5 per drink</p>
     </div>
@@ -526,7 +531,7 @@
     <div class="photos-box">
       <p>We would love to see the moments you capture.<br>
       Tap the button below to add your photos to our shared album.</p>
-      <a class="btn" href="https://photos.app.goo.gl/WMWkb9ZkBFDPqkiz6/" target="_blank" rel="noopener">
+      <a class="btn" href="https://photos.app.goo.gl/mJhahAzRduGML2sF9" target="_blank" rel="noopener">
         Add Your Photos
       </a>
     </div>
